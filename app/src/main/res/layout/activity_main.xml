@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AGE CALCULATOR"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age Display"
+        android:layout_margin="30dp"
+        android:padding="10dp"
+        android:textSize="25dp"
+        android:textColor="#FFBB86FC"
+        android:id="@+id/txtAge"/>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="4"
+        android:columnCount="4"
+        android:layout_margin="30dp">
+        <TextView
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="YEAR OF BIRTH"
+            android:textSize="20dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+
+        <EditText
+            android:layout_width="124dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginLeft="15dp"
+            android:hint="Enter"
+            android:inputType="date"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:id="@+id/txtByear"/>
+        <TextView
+            android:layout_row="1"
+            android:layout_column="0"
+            android:text="CURRENT YEAR"
+            android:textSize="20dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+
+        <EditText
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:hint="Enter"
+            android:id="@+id/txtCyear"
+            android:inputType="date"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+    </GridLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:background="#FF000000"
+            android:textColor="#fff"
+            android:layout_marginLeft="70dp"
+            android:id="@+id/btnage"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="clear"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:background="#FF000000"
+            android:layout_marginLeft="230dp"
+            android:id="@+id/btnclear"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>
